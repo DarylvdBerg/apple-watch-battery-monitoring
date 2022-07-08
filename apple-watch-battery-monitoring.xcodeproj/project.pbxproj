@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBC78FF42878A8400020B984 /* apple_watch_battery_monitoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC78FF32878A8400020B984 /* apple_watch_battery_monitoringApp.swift */; };
-		FBC78FF62878A8400020B984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC78FF52878A8400020B984 /* ContentView.swift */; };
+		FB2BBA782878AA8400858E21 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BBA772878AA8400858E21 /* DashboardView.swift */; };
+		FB2BBA7A2878AA9700858E21 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BBA792878AA9700858E21 /* DashboardViewModel.swift */; };
+		FB2BBA7C2878AAB100858E21 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BBA7B2878AAB100858E21 /* DashboardModel.swift */; };
+		FB2BBA7E2878AC1B00858E21 /* IDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2BBA7D2878AC1B00858E21 /* IDashboardViewModel.swift */; };
 		FBC78FF82878A8430020B984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC78FF72878A8430020B984 /* Assets.xcassets */; };
 		FBC78FFB2878A8430020B984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC78FFA2878A8430020B984 /* Preview Assets.xcassets */; };
 		FBC78FFF2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBC78FFE2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -66,9 +68,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB2BBA772878AA8400858E21 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FB2BBA792878AA9700858E21 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		FB2BBA7B2878AAB100858E21 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		FB2BBA7D2878AC1B00858E21 /* IDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDashboardViewModel.swift; sourceTree = "<group>"; };
 		FBC78FF02878A8400020B984 /* apple-watch-battery-monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-watch-battery-monitoring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBC78FF32878A8400020B984 /* apple_watch_battery_monitoringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_watch_battery_monitoringApp.swift; sourceTree = "<group>"; };
-		FBC78FF52878A8400020B984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBC78FF72878A8430020B984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBC78FFA2878A8430020B984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBC78FFE2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-watch-battery-monitoring WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +107,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB2BBA732878AA0400858E21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB2BBA772878AA8400858E21 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB2BBA742878AA0E00858E21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB2BBA792878AA9700858E21 /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FB2BBA752878AA1500858E21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB2BBA7B2878AAB100858E21 /* DashboardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB2BBA762878AA1A00858E21 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FB2BBA7D2878AC1B00858E21 /* IDashboardViewModel.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FBC78FE72878A8400020B984 = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +162,10 @@
 		FBC78FF22878A8400020B984 /* apple-watch-battery-monitoring */ = {
 			isa = PBXGroup;
 			children = (
-				FBC78FF32878A8400020B984 /* apple_watch_battery_monitoringApp.swift */,
-				FBC78FF52878A8400020B984 /* ContentView.swift */,
+				FB2BBA762878AA1A00858E21 /* Protocols */,
+				FB2BBA752878AA1500858E21 /* Models */,
+				FB2BBA742878AA0E00858E21 /* ViewModels */,
+				FB2BBA732878AA0400858E21 /* Views */,
 				FBC78FF72878A8430020B984 /* Assets.xcassets */,
 				FBC78FF92878A8430020B984 /* Preview Content */,
 			);
@@ -242,6 +280,7 @@
 				TargetAttributes = {
 					FBC78FEF2878A8400020B984 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					FBC78FFD2878A8430020B984 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -305,8 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBC78FF62878A8400020B984 /* ContentView.swift in Sources */,
-				FBC78FF42878A8400020B984 /* apple_watch_battery_monitoringApp.swift in Sources */,
+				FB2BBA7E2878AC1B00858E21 /* IDashboardViewModel.swift in Sources */,
+				FB2BBA782878AA8400858E21 /* DashboardView.swift in Sources */,
+				FB2BBA7C2878AAB100858E21 /* DashboardModel.swift in Sources */,
+				FB2BBA7A2878AA9700858E21 /* DashboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"apple-watch-battery-monitoring/Preview Content\"";
@@ -586,6 +628,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -596,6 +639,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"apple-watch-battery-monitoring/Preview Content\"";
