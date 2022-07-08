@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBC78FF42878A8400020B984 /* apple_watch_battery_monitoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC78FF32878A8400020B984 /* apple_watch_battery_monitoringApp.swift */; };
+		FBC78FF62878A8400020B984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC78FF52878A8400020B984 /* ContentView.swift */; };
+		FBC78FF82878A8430020B984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC78FF72878A8430020B984 /* Assets.xcassets */; };
+		FBC78FFB2878A8430020B984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC78FFA2878A8430020B984 /* Preview Assets.xcassets */; };
+		FBC78FFF2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBC78FFE2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBC790042878A8440020B984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC790032878A8440020B984 /* Assets.xcassets */; };
+		FBC7900A2878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBC790092878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBC7900F2878A8440020B984 /* apple_watch_battery_monitoringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7900E2878A8440020B984 /* apple_watch_battery_monitoringApp.swift */; };
+		FBC790112878A8440020B984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC790102878A8440020B984 /* ContentView.swift */; };
+		FBC790132878A8440020B984 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC790122878A8440020B984 /* NotificationController.swift */; };
+		FBC790152878A8440020B984 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC790142878A8440020B984 /* NotificationView.swift */; };
+		FBC790172878A8440020B984 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC790162878A8440020B984 /* ComplicationController.swift */; };
+		FBC790192878A8440020B984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC790182878A8440020B984 /* Assets.xcassets */; };
+		FBC7901C2878A8440020B984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC7901B2878A8440020B984 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBC790002878A8430020B984 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC78FE82878A8400020B984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC78FFD2878A8430020B984;
+			remoteInfo = "apple-watch-battery-monitoring WatchKit App";
+		};
+		FBC7900B2878A8440020B984 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC78FE82878A8400020B984 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC790082878A8440020B984;
+			remoteInfo = "apple-watch-battery-monitoring WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBC790242878A8440020B984 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBC7900A2878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC790282878A8440020B984 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FBC78FFF2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FBC78FF02878A8400020B984 /* apple-watch-battery-monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-watch-battery-monitoring.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC78FF32878A8400020B984 /* apple_watch_battery_monitoringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_watch_battery_monitoringApp.swift; sourceTree = "<group>"; };
+		FBC78FF52878A8400020B984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBC78FF72878A8430020B984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBC78FFA2878A8430020B984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBC78FFE2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "apple-watch-battery-monitoring WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC790032878A8440020B984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBC790092878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "apple-watch-battery-monitoring WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC7900E2878A8440020B984 /* apple_watch_battery_monitoringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apple_watch_battery_monitoringApp.swift; sourceTree = "<group>"; };
+		FBC790102878A8440020B984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBC790122878A8440020B984 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FBC790142878A8440020B984 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		FBC790162878A8440020B984 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FBC790182878A8440020B984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBC7901B2878A8440020B984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBC7901D2878A8440020B984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC7901E2878A8440020B984 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBC78FED2878A8400020B984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC790062878A8440020B984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBC78FE72878A8400020B984 = {
+			isa = PBXGroup;
+			children = (
+				FBC78FF22878A8400020B984 /* apple-watch-battery-monitoring */,
+				FBC790022878A8430020B984 /* apple-watch-battery-monitoring WatchKit App */,
+				FBC7900D2878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension */,
+				FBC78FF12878A8400020B984 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBC78FF12878A8400020B984 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC78FF02878A8400020B984 /* apple-watch-battery-monitoring.app */,
+				FBC78FFE2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app */,
+				FBC790092878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC78FF22878A8400020B984 /* apple-watch-battery-monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				FBC78FF32878A8400020B984 /* apple_watch_battery_monitoringApp.swift */,
+				FBC78FF52878A8400020B984 /* ContentView.swift */,
+				FBC78FF72878A8430020B984 /* Assets.xcassets */,
+				FBC78FF92878A8430020B984 /* Preview Content */,
+			);
+			path = "apple-watch-battery-monitoring";
+			sourceTree = "<group>";
+		};
+		FBC78FF92878A8430020B984 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBC78FFA2878A8430020B984 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBC790022878A8430020B984 /* apple-watch-battery-monitoring WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FBC790032878A8440020B984 /* Assets.xcassets */,
+			);
+			path = "apple-watch-battery-monitoring WatchKit App";
+			sourceTree = "<group>";
+		};
+		FBC7900D2878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7900E2878A8440020B984 /* apple_watch_battery_monitoringApp.swift */,
+				FBC790102878A8440020B984 /* ContentView.swift */,
+				FBC790122878A8440020B984 /* NotificationController.swift */,
+				FBC790142878A8440020B984 /* NotificationView.swift */,
+				FBC790162878A8440020B984 /* ComplicationController.swift */,
+				FBC790182878A8440020B984 /* Assets.xcassets */,
+				FBC7901D2878A8440020B984 /* Info.plist */,
+				FBC7901E2878A8440020B984 /* PushNotificationPayload.apns */,
+				FBC7901A2878A8440020B984 /* Preview Content */,
+			);
+			path = "apple-watch-battery-monitoring WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		FBC7901A2878A8440020B984 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7901B2878A8440020B984 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBC78FEF2878A8400020B984 /* apple-watch-battery-monitoring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC790292878A8440020B984 /* Build configuration list for PBXNativeTarget "apple-watch-battery-monitoring" */;
+			buildPhases = (
+				FBC78FEC2878A8400020B984 /* Sources */,
+				FBC78FED2878A8400020B984 /* Frameworks */,
+				FBC78FEE2878A8400020B984 /* Resources */,
+				FBC790282878A8440020B984 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC790012878A8430020B984 /* PBXTargetDependency */,
+			);
+			name = "apple-watch-battery-monitoring";
+			productName = "apple-watch-battery-monitoring";
+			productReference = FBC78FF02878A8400020B984 /* apple-watch-battery-monitoring.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBC78FFD2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC790252878A8440020B984 /* Build configuration list for PBXNativeTarget "apple-watch-battery-monitoring WatchKit App" */;
+			buildPhases = (
+				FBC78FFC2878A8430020B984 /* Resources */,
+				FBC790242878A8440020B984 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC7900C2878A8440020B984 /* PBXTargetDependency */,
+			);
+			name = "apple-watch-battery-monitoring WatchKit App";
+			productName = "apple-watch-battery-monitoring WatchKit App";
+			productReference = FBC78FFE2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FBC790082878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC790212878A8440020B984 /* Build configuration list for PBXNativeTarget "apple-watch-battery-monitoring WatchKit Extension" */;
+			buildPhases = (
+				FBC790052878A8440020B984 /* Sources */,
+				FBC790062878A8440020B984 /* Frameworks */,
+				FBC790072878A8440020B984 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "apple-watch-battery-monitoring WatchKit Extension";
+			productName = "apple-watch-battery-monitoring WatchKit Extension";
+			productReference = FBC790092878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBC78FE82878A8400020B984 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FBC78FEF2878A8400020B984 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					FBC78FFD2878A8430020B984 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					FBC790082878A8440020B984 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FBC78FEB2878A8400020B984 /* Build configuration list for PBXProject "apple-watch-battery-monitoring" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBC78FE72878A8400020B984;
+			productRefGroup = FBC78FF12878A8400020B984 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBC78FEF2878A8400020B984 /* apple-watch-battery-monitoring */,
+				FBC78FFD2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App */,
+				FBC790082878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBC78FEE2878A8400020B984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC78FFB2878A8430020B984 /* Preview Assets.xcassets in Resources */,
+				FBC78FF82878A8430020B984 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC78FFC2878A8430020B984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC790042878A8440020B984 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC790072878A8440020B984 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC7901C2878A8440020B984 /* Preview Assets.xcassets in Resources */,
+				FBC790192878A8440020B984 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBC78FEC2878A8400020B984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC78FF62878A8400020B984 /* ContentView.swift in Sources */,
+				FBC78FF42878A8400020B984 /* apple_watch_battery_monitoringApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC790052878A8440020B984 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC790132878A8440020B984 /* NotificationController.swift in Sources */,
+				FBC790112878A8440020B984 /* ContentView.swift in Sources */,
+				FBC790172878A8440020B984 /* ComplicationController.swift in Sources */,
+				FBC7900F2878A8440020B984 /* apple_watch_battery_monitoringApp.swift in Sources */,
+				FBC790152878A8440020B984 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBC790012878A8430020B984 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC78FFD2878A8430020B984 /* apple-watch-battery-monitoring WatchKit App */;
+			targetProxy = FBC790002878A8430020B984 /* PBXContainerItemProxy */;
+		};
+		FBC7900C2878A8440020B984 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC790082878A8440020B984 /* apple-watch-battery-monitoring WatchKit Extension */;
+			targetProxy = FBC7900B2878A8440020B984 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBC7901F2878A8440020B984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBC790202878A8440020B984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FBC790222878A8440020B984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"apple-watch-battery-monitoring WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "apple-watch-battery-monitoring WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "apple-watch-battery-monitoring WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vdberg.daryl.apple-watch-battery-monitoring.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		FBC790232878A8440020B984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"apple-watch-battery-monitoring WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "apple-watch-battery-monitoring WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "apple-watch-battery-monitoring WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vdberg.daryl.apple-watch-battery-monitoring.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		FBC790262878A8440020B984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = apple_watch_battery_monitoring_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "apple-watch-battery-monitoring WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.vdberg.daryl.apple-watch-battery-monitoring";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vdberg.daryl.apple-watch-battery-monitoring.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		FBC790272878A8440020B984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = apple_watch_battery_monitoring_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "apple-watch-battery-monitoring WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.vdberg.daryl.apple-watch-battery-monitoring";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vdberg.daryl.apple-watch-battery-monitoring.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		FBC7902A2878A8440020B984 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"apple-watch-battery-monitoring/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vdberg.daryl.apple-watch-battery-monitoring";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBC7902B2878A8440020B984 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"apple-watch-battery-monitoring/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vdberg.daryl.apple-watch-battery-monitoring";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBC78FEB2878A8400020B984 /* Build configuration list for PBXProject "apple-watch-battery-monitoring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC7901F2878A8440020B984 /* Debug */,
+				FBC790202878A8440020B984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC790212878A8440020B984 /* Build configuration list for PBXNativeTarget "apple-watch-battery-monitoring WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC790222878A8440020B984 /* Debug */,
+				FBC790232878A8440020B984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC790252878A8440020B984 /* Build configuration list for PBXNativeTarget "apple-watch-battery-monitoring WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC790262878A8440020B984 /* Debug */,
+				FBC790272878A8440020B984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC790292878A8440020B984 /* Build configuration list for PBXNativeTarget "apple-watch-battery-monitoring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC7902A2878A8440020B984 /* Debug */,
+				FBC7902B2878A8440020B984 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBC78FE82878A8400020B984 /* Project object */;
+}
