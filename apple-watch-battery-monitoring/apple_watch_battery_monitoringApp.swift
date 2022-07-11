@@ -11,7 +11,7 @@ import SwiftUI
 struct apple_watch_battery_monitoringApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView()
         }
     }
 }
