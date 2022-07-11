@@ -2,28 +2,27 @@
 //  NotificationController.swift
 //  apple-watch-battery-monitoring WatchKit Extension
 //
-//  Created by Daryl van den Berg on 08/07/2022.
+//  Created by Daryl van den Berg on 11/07/2022.
 //
 
 import WatchKit
-import Foundation
+import SwiftUI
 import UserNotifications
 
-class NotificationController: WKUserNotificationInterfaceController {
+class NotificationController: WKUserNotificationHostingController<NotificationView> {
 
-    override init() {
-        // Initialize variables here.
-        super.init()
-        
-        // Configure interface objects here.
+    override var body: NotificationView {
+        return NotificationView()
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
+        super.didDeactivate()
     }
 
     override func didReceive(_ notification: UNNotification) {

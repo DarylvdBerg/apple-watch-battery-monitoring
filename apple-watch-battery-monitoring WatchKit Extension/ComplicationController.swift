@@ -2,7 +2,7 @@
 //  ComplicationController.swift
 //  apple-watch-battery-monitoring WatchKit Extension
 //
-//  Created by Daryl van den Berg on 08/07/2022.
+//  Created by Daryl van den Berg on 11/07/2022.
 //
 
 import ClockKit
