@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+
 struct watchDashboardView: View {
-    
     var body: some View {
-        Text("sdfjsdfd")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
