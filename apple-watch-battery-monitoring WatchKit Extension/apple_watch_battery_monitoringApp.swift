@@ -12,7 +12,7 @@ struct apple_watch_battery_monitoringApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                watchDashboardView()
+                mDashboardView()
             }
         }
 

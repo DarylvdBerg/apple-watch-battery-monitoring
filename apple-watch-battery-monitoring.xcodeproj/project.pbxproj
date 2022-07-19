@@ -19,13 +19,16 @@
 		FBB3762F287C9FC900FBF950 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3762E287C9FC900FBF950 /* ComplicationController.swift */; };
 		FBB37631287C9FC900FBF950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB37630287C9FC900FBF950 /* Assets.xcassets */; };
 		FBB37634287C9FC900FBF950 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB37633287C9FC900FBF950 /* Preview Assets.xcassets */; };
-		FBB37649287CA07400FBF950 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB37648287CA07400FBF950 /* DashboardView.swift */; };
-		FBB3764B287CA09B00FBF950 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3764A287CA09B00FBF950 /* Dashboard.swift */; };
-		FBB3764D287CA14800FBF950 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3764C287CA14800FBF950 /* DashboardViewModel.swift */; };
-		FBB37650287CA19300FBF950 /* IDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3764F287CA19300FBF950 /* IDashboardViewModel.swift */; };
-		FBB37652287CAA2500FBF950 /* BatteryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB37651287CAA2500FBF950 /* BatteryHelper.swift */; };
-		FBB3765E287CBCBB00FBF950 /* watchDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3765D287CBCBB00FBF950 /* watchDashboardView.swift */; };
-		FBB37660287CBCE600FBF950 /* watchDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3765F287CBCE600FBF950 /* watchDashboardController.swift */; };
+		FBC257912886D05800CA7196 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC257902886D05800CA7196 /* DashboardView.swift */; };
+		FBC257942886D06900CA7196 /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC257932886D06900CA7196 /* DashboardController.swift */; };
+		FBC257962886D08100CA7196 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC257952886D08100CA7196 /* Dashboard.swift */; };
+		FBC2579A2886D89C00CA7196 /* WCSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC257992886D89C00CA7196 /* WCSessionManager.swift */; };
+		FBC2579B2886D89C00CA7196 /* WCSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC257992886D89C00CA7196 /* WCSessionManager.swift */; };
+		FBC257A72886E2E200CA7196 /* mDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC257A62886E2E200CA7196 /* mDashboard.swift */; };
+		FBC257A82886E2E200CA7196 /* mDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC257A62886E2E200CA7196 /* mDashboard.swift */; };
+		FBDAA29C2886E988005EBABB /* mDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDAA29B2886E988005EBABB /* mDashboardController.swift */; };
+		FBDAA29E2886EA57005EBABB /* mDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDAA29D2886EA57005EBABB /* mDashboardView.swift */; };
+		FBDAA2A12886F38C005EBABB /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDAA2A02886F38C005EBABB /* DashboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,13 +89,14 @@
 		FBB37633287C9FC900FBF950 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBB37635287C9FC900FBF950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBB37636287C9FC900FBF950 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		FBB37648287CA07400FBF950 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		FBB3764A287CA09B00FBF950 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
-		FBB3764C287CA14800FBF950 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
-		FBB3764F287CA19300FBF950 /* IDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDashboardViewModel.swift; sourceTree = "<group>"; };
-		FBB37651287CAA2500FBF950 /* BatteryHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHelper.swift; sourceTree = "<group>"; };
-		FBB3765D287CBCBB00FBF950 /* watchDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchDashboardView.swift; sourceTree = "<group>"; };
-		FBB3765F287CBCE600FBF950 /* watchDashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchDashboardController.swift; sourceTree = "<group>"; };
+		FBC257902886D05800CA7196 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		FBC257932886D06900CA7196 /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
+		FBC257952886D08100CA7196 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		FBC257992886D89C00CA7196 /* WCSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionManager.swift; sourceTree = "<group>"; };
+		FBC257A62886E2E200CA7196 /* mDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mDashboard.swift; sourceTree = "<group>"; };
+		FBDAA29B2886E988005EBABB /* mDashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mDashboardController.swift; sourceTree = "<group>"; };
+		FBDAA29D2886EA57005EBABB /* mDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mDashboardView.swift; sourceTree = "<group>"; };
+		FBDAA2A02886F38C005EBABB /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		FBB375FF287C9FC700FBF950 = {
 			isa = PBXGroup;
 			children = (
+				FBC2578C2886D01200CA7196 /* WCSessionManager */,
 				FBB3760A287C9FC700FBF950 /* apple-watch-battery-monitoring */,
 				FBB3761A287C9FC800FBF950 /* apple-watch-battery-monitoring WatchKit App */,
 				FBB37625287C9FC900FBF950 /* apple-watch-battery-monitoring WatchKit Extension */,
@@ -136,11 +141,10 @@
 		FBB3760A287C9FC700FBF950 /* apple-watch-battery-monitoring */ = {
 			isa = PBXGroup;
 			children = (
-				FBB3764E287CA18300FBF950 /* Interfaces */,
-				FBB37647287CA06600FBF950 /* ViewModel */,
-				FBB37646287CA05F00FBF950 /* Helpers */,
-				FBB37645287CA05800FBF950 /* View */,
-				FBB37644287CA05100FBF950 /* Model */,
+				FBDAA29F2886F37C005EBABB /* ViewModel */,
+				FBC2578F2886D03E00CA7196 /* Controller */,
+				FBC2578E2886D03600CA7196 /* View */,
+				FBC2578D2886D02E00CA7196 /* Model */,
 				FBB3760B287C9FC700FBF950 /* apple_watch_battery_monitoringApp.swift */,
 				FBB3760F287C9FC800FBF950 /* Assets.xcassets */,
 				FBB37611287C9FC800FBF950 /* Preview Content */,
@@ -167,6 +171,9 @@
 		FBB37625287C9FC900FBF950 /* apple-watch-battery-monitoring WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FBC2579F2886E2A700CA7196 /* Model */,
+				FBC2579E2886E2A100CA7196 /* Controller */,
+				FBC2579D2886E29C00CA7196 /* View */,
 				FBB37626287C9FC900FBF950 /* apple_watch_battery_monitoringApp.swift */,
 				FBB3762A287C9FC900FBF950 /* NotificationController.swift */,
 				FBB3762C287C9FC900FBF950 /* NotificationView.swift */,
@@ -175,8 +182,6 @@
 				FBB37635287C9FC900FBF950 /* Info.plist */,
 				FBB37636287C9FC900FBF950 /* PushNotificationPayload.apns */,
 				FBB37632287C9FC900FBF950 /* Preview Content */,
-				FBB3765D287CBCBB00FBF950 /* watchDashboardView.swift */,
-				FBB3765F287CBCE600FBF950 /* watchDashboardController.swift */,
 			);
 			path = "apple-watch-battery-monitoring WatchKit Extension";
 			sourceTree = "<group>";
@@ -189,44 +194,68 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FBB37644287CA05100FBF950 /* Model */ = {
+		FBC2578C2886D01200CA7196 /* WCSessionManager */ = {
 			isa = PBXGroup;
 			children = (
-				FBB3764A287CA09B00FBF950 /* Dashboard.swift */,
+				FBC257992886D89C00CA7196 /* WCSessionManager.swift */,
+			);
+			path = WCSessionManager;
+			sourceTree = "<group>";
+		};
+		FBC2578D2886D02E00CA7196 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBC257952886D08100CA7196 /* Dashboard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FBB37645287CA05800FBF950 /* View */ = {
+		FBC2578E2886D03600CA7196 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FBB37648287CA07400FBF950 /* DashboardView.swift */,
+				FBC257902886D05800CA7196 /* DashboardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		FBB37646287CA05F00FBF950 /* Helpers */ = {
+		FBC2578F2886D03E00CA7196 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FBB37651287CAA2500FBF950 /* BatteryHelper.swift */,
+				FBC257932886D06900CA7196 /* DashboardController.swift */,
 			);
-			path = Helpers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		FBB37647287CA06600FBF950 /* ViewModel */ = {
+		FBC2579D2886E29C00CA7196 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FBB3764C287CA14800FBF950 /* DashboardViewModel.swift */,
+				FBDAA29D2886EA57005EBABB /* mDashboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBC2579E2886E2A100CA7196 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBDAA29B2886E988005EBABB /* mDashboardController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FBC2579F2886E2A700CA7196 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBC257A62886E2E200CA7196 /* mDashboard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBDAA29F2886F37C005EBABB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBDAA2A02886F38C005EBABB /* DashboardViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		FBB3764E287CA18300FBF950 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				FBB3764F287CA19300FBF950 /* IDashboardViewModel.swift */,
-			);
-			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,12 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB37650287CA19300FBF950 /* IDashboardViewModel.swift in Sources */,
-				FBB37652287CAA2500FBF950 /* BatteryHelper.swift in Sources */,
+				FBC257A72886E2E200CA7196 /* mDashboard.swift in Sources */,
+				FBC257912886D05800CA7196 /* DashboardView.swift in Sources */,
+				FBC257942886D06900CA7196 /* DashboardController.swift in Sources */,
+				FBC2579A2886D89C00CA7196 /* WCSessionManager.swift in Sources */,
+				FBC257962886D08100CA7196 /* Dashboard.swift in Sources */,
 				FBB3760C287C9FC700FBF950 /* apple_watch_battery_monitoringApp.swift in Sources */,
-				FBB3764B287CA09B00FBF950 /* Dashboard.swift in Sources */,
-				FBB37649287CA07400FBF950 /* DashboardView.swift in Sources */,
-				FBB3764D287CA14800FBF950 /* DashboardViewModel.swift in Sources */,
+				FBDAA2A12886F38C005EBABB /* DashboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,12 +403,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB3765E287CBCBB00FBF950 /* watchDashboardView.swift in Sources */,
+				FBC257A82886E2E200CA7196 /* mDashboard.swift in Sources */,
 				FBB3762B287C9FC900FBF950 /* NotificationController.swift in Sources */,
 				FBB3762F287C9FC900FBF950 /* ComplicationController.swift in Sources */,
 				FBB37627287C9FC900FBF950 /* apple_watch_battery_monitoringApp.swift in Sources */,
-				FBB37660287CBCE600FBF950 /* watchDashboardController.swift in Sources */,
+				FBC2579B2886D89C00CA7196 /* WCSessionManager.swift in Sources */,
+				FBDAA29C2886E988005EBABB /* mDashboardController.swift in Sources */,
 				FBB3762D287C9FC900FBF950 /* NotificationView.swift in Sources */,
+				FBDAA29E2886EA57005EBABB /* mDashboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

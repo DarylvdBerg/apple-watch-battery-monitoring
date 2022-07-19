@@ -1,27 +1,31 @@
 //
-//  DashboardView.swift
+//  Dashboard.swift
 //  apple-watch-battery-monitoring
 //
-//  Created by Daryl van den Berg on 11/07/2022.
+//  Created by Daryl van den Berg on 19/07/2022.
 //
 
 import SwiftUI
 
 struct DashboardView: View {
-    
-    @StateObject private var viewModel = DashboardViewModel()
-    @State var inputfieldValue: String = ""
+    @ObservedObject var viewModel: DashboardViewModel = DashboardViewModel()
     
     var body: some View {
-        VStack() {
-            Text("hello")
-        }
+        VStack {
+            VStack {
+            }
+            VStack {
+                Text("Watch battery level: \(viewModel.getWatchBatteryLevel())%")
+            }
+            Divider()
+        }.onAppear(perform: viewModel.intitView)
     }
+    
 }
 
-struct DashboardView_Previews: PreviewProvider {
+struct Dashboard_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro"))
+            .previewDevice("iPhone 13 pro")
     }
 }

@@ -1,29 +1,39 @@
 //
-//  DashboardViewModel.swift
+//  DashboardController.swift
 //  apple-watch-battery-monitoring
 //
 //  Created by Daryl van den Berg on 19/07/2022.
 //
 
 import Foundation
+import UIKit
 import WatchConnectivity
-class DashboardViewModel: NSObject, ObservableObject {
-    @Published var dashboard: Dashboard
+class DashboardController: NSObject, ObservableObject {
+    
+    var dashboard: Dashboard = Dashboard(watchBattery: 100, phoneBattery: 100)
     var session: WCSession?
     
     override init() {
-        self.dashboard = Dashboard(watchBattery: 100, phoneBattery: 100)
+        UIDevice.current.isBatteryMonitoringEnabled = true
         super.init()
-        
         activateSession()
+        
     }
     
-    func getWatchBatteryLevel() -> Int {
-        return dashboard.watchBattery
+    func getPhoneBattery() -> Int {
+        let phoneBatteryLevel = Int(UIDevice.current.batteryLevel * 100)
+        self.dashboard.phoneBattery = phoneBatteryLevel
+        return self.dashboard.phoneBattery
+        
     }
     
-    func updateWatchBatteryLevel(newValue: Int) {
-        self.dashboard.watchBattery = newValue
+    func getWatchBattery() -> Int {
+        return self.dashboard.watchBattery
+    }
+    
+    func updateView() {
+        dashboard.phoneBattery = getPhoneBattery()
+        dashboard.watchBattery = getWatchBattery()
     }
     
     func activateSession() {
@@ -34,12 +44,10 @@ class DashboardViewModel: NSObject, ObservableObject {
         }
     }
     
-    func intitView() {
-        self.getWatchBatteryLevel()
-    }
 }
 
-extension DashboardViewModel: WCSessionDelegate {
+extension DashboardController: WCSessionDelegate {
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?){
         print("Session actived and completed")
         
@@ -55,7 +63,7 @@ extension DashboardViewModel: WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         DispatchQueue.main.async {
-            self.updateWatchBatteryLevel(newValue: message["watchBattery"] as? Int ?? 0)
+            self.dashboard.watchBattery = message["watchBattery"] as? Int ?? 0
             print(self.dashboard.watchBattery)
         }
     }
